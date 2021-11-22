@@ -2,8 +2,143 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+    
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        padding-top: 10px;
+    }
+    .sidebar {
+        width: 30%;
+    }
 
+    .sidebar__logo {
+        margin: 10px auto;
+        padding-left: 15px;
+    }
+
+    .sidebar__title {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    .sidebar__burder {
+        cursor: pointer;
+        display: block;
+        background: url('../img/premium-icon-menu-6200224.png') no-repeat;
+        height: 24px;
+        width: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .sidebar__help {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .sidebar__list {
+        display: none;
+    }
+
+    .main__content {
+        width: 60%;
+    }
+
+    .main__grid > div {
+        border-radius: 8px;
+    }
+
+    .main__grid {
+        gap: 5px;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(8, 80px);
 }
+    .main__grid-card1 {
+        grid-column: span 2;
+        background: url('../img/card1small.jpg') no-repeat center;
+        background-size: contain;
+    }
+    .card1__title {
+        left: -55px;
+        font-size: 17px;    
+    }
+
+    .main__grid-card2 {
+        grid-column: span 2;
+        background-size: contain;
+    }
+
+    .main__grid-card3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+    }
+    .main__grid-card3::after {
+        display: none;
+    }
+    .main__grid-card4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+    }
+
+    .main__grid-card4::after {
+        display: none;
+    }
+
+    .main__grid-card5 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 7;
+    }
+
+    .main__grid-card5::after {
+        display: none;
+    }
+
+    .main__grid-card6 {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7;
+    }
+
+    .main__grid-card6::after {
+        display: none;
+    }
+    .main__grid-card7 {
+       grid-column: 1 / 3;
+       grid-row: 7 / 8;
+       background-size: contain;
+    }
+
+    .card7__title {
+        padding-left: 10px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    
+    .card7__desc {
+        padding-left: 15px;
+        font-size: 10px;
+    }
+    .main__grid-card8 {
+        grid-column: 1 / 3;
+        grid-row: 8 / 9;
+        background-size: contain;
+    }
+
+    .card8__title {
+        padding-left: 10px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    
+    .card8__desc {
+        padding-left: 15px;
+        font-size: 10px;
+    }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
